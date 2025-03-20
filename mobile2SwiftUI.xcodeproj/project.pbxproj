@@ -14,6 +14,16 @@
 		C303A69D2D5ECFB2008D8DD1 /* mobile2SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A69C2D5ECFB2008D8DD1 /* mobile2SwiftUITests.swift */; };
 		C303A6A72D5ECFB2008D8DD1 /* mobile2SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A6A62D5ECFB2008D8DD1 /* mobile2SwiftUIUITests.swift */; };
 		C303A6A92D5ECFB2008D8DD1 /* mobile2SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A6A82D5ECFB2008D8DD1 /* mobile2SwiftUIUITestsLaunchTests.swift */; };
+		C33B565B2D7689A700921CDE /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B565A2D7689A700921CDE /* SwiftUIView.swift */; };
+		C34CD5AF2D8BA2A300D1B357 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CD5AE2D8BA2A300D1B357 /* ItemModel.swift */; };
+		C34CD5B12D8BA37200D1B357 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CD5B02D8BA37200D1B357 /* ItemViewModel.swift */; };
+		C34CD5B32D8BA59300D1B357 /* ListExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CD5B22D8BA59300D1B357 /* ListExampleView.swift */; };
+		C34CD5B52D8BA5C100D1B357 /* DetailListExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CD5B42D8BA5C100D1B357 /* DetailListExampleView.swift */; };
+		C3957F282D6417FA00DFDCD3 /* SumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3957F272D6417F900DFDCD3 /* SumView.swift */; };
+		C3957F2A2D6418D200DFDCD3 /* SumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3957F292D6418D200DFDCD3 /* SumViewModel.swift */; };
+		C3957F2E2D64196300DFDCD3 /* UIAlertControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3957F2D2D64196300DFDCD3 /* UIAlertControllerWrapper.swift */; };
+		C3957F302D641C5E00DFDCD3 /* TemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3957F2F2D641C5E00DFDCD3 /* TemperatureView.swift */; };
+		C3E89C7E2D6569930042D0D9 /* TemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E89C7D2D6569920042D0D9 /* TemperatureViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,16 @@
 		C303A6A22D5ECFB2008D8DD1 /* mobile2SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobile2SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C303A6A62D5ECFB2008D8DD1 /* mobile2SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile2SwiftUIUITests.swift; sourceTree = "<group>"; };
 		C303A6A82D5ECFB2008D8DD1 /* mobile2SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile2SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C33B565A2D7689A700921CDE /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		C34CD5AE2D8BA2A300D1B357 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		C34CD5B02D8BA37200D1B357 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		C34CD5B22D8BA59300D1B357 /* ListExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExampleView.swift; sourceTree = "<group>"; };
+		C34CD5B42D8BA5C100D1B357 /* DetailListExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListExampleView.swift; sourceTree = "<group>"; };
+		C3957F272D6417F900DFDCD3 /* SumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumView.swift; sourceTree = "<group>"; };
+		C3957F292D6418D200DFDCD3 /* SumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumViewModel.swift; sourceTree = "<group>"; };
+		C3957F2D2D64196300DFDCD3 /* UIAlertControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerWrapper.swift; sourceTree = "<group>"; };
+		C3957F2F2D641C5E00DFDCD3 /* TemperatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureView.swift; sourceTree = "<group>"; };
+		C3E89C7D2D6569920042D0D9 /* TemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +114,17 @@
 		C303A68A2D5ECFAF008D8DD1 /* mobile2SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C34CD5A92D8BA23F00D1B357 /* SecondPartial */,
 				C303A68B2D5ECFAF008D8DD1 /* mobile2SwiftUIApp.swift */,
 				C303A68D2D5ECFAF008D8DD1 /* ContentView.swift */,
+				C3957F272D6417F900DFDCD3 /* SumView.swift */,
 				C303A68F2D5ECFB2008D8DD1 /* Assets.xcassets */,
 				C303A6912D5ECFB2008D8DD1 /* Preview Content */,
+				C3957F292D6418D200DFDCD3 /* SumViewModel.swift */,
+				C3957F2D2D64196300DFDCD3 /* UIAlertControllerWrapper.swift */,
+				C3957F2F2D641C5E00DFDCD3 /* TemperatureView.swift */,
+				C3E89C7D2D6569920042D0D9 /* TemperatureViewModel.swift */,
+				C33B565A2D7689A700921CDE /* SwiftUIView.swift */,
 			);
 			path = mobile2SwiftUI;
 			sourceTree = "<group>";
@@ -125,6 +152,49 @@
 				C303A6A82D5ECFB2008D8DD1 /* mobile2SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = mobile2SwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		C34CD5A92D8BA23F00D1B357 /* SecondPartial */ = {
+			isa = PBXGroup;
+			children = (
+				C34CD5AA2D8BA25400D1B357 /* DataStructures */,
+			);
+			path = SecondPartial;
+			sourceTree = "<group>";
+		};
+		C34CD5AA2D8BA25400D1B357 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				C34CD5AD2D8BA27B00D1B357 /* ViewModel */,
+				C34CD5AC2D8BA27000D1B357 /* View */,
+				C34CD5AB2D8BA26200D1B357 /* Model */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		C34CD5AB2D8BA26200D1B357 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C34CD5AE2D8BA2A300D1B357 /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C34CD5AC2D8BA27000D1B357 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C34CD5B22D8BA59300D1B357 /* ListExampleView.swift */,
+				C34CD5B42D8BA5C100D1B357 /* DetailListExampleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C34CD5AD2D8BA27B00D1B357 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C34CD5B02D8BA37200D1B357 /* ItemViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +327,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3957F2E2D64196300DFDCD3 /* UIAlertControllerWrapper.swift in Sources */,
 				C303A68E2D5ECFAF008D8DD1 /* ContentView.swift in Sources */,
+				C33B565B2D7689A700921CDE /* SwiftUIView.swift in Sources */,
+				C34CD5B12D8BA37200D1B357 /* ItemViewModel.swift in Sources */,
+				C34CD5B52D8BA5C100D1B357 /* DetailListExampleView.swift in Sources */,
+				C34CD5AF2D8BA2A300D1B357 /* ItemModel.swift in Sources */,
+				C34CD5B32D8BA59300D1B357 /* ListExampleView.swift in Sources */,
+				C3957F282D6417FA00DFDCD3 /* SumView.swift in Sources */,
+				C3957F2A2D6418D200DFDCD3 /* SumViewModel.swift in Sources */,
 				C303A68C2D5ECFAF008D8DD1 /* mobile2SwiftUIApp.swift in Sources */,
+				C3957F302D641C5E00DFDCD3 /* TemperatureView.swift in Sources */,
+				C3E89C7E2D6569930042D0D9 /* TemperatureViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
