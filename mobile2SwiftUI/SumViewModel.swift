@@ -19,6 +19,6 @@ class SumViewModel: ObservableObject {
         let num1 = Int(number1) ?? 0
         let num2 = Int(number2) ?? 0
         result = num1 + num2
-        showAlert = true  // Trigger the alert
+        showAlert = true 
     }
 }
