@@ -31,6 +31,8 @@
 		C39F23D82D94DEC90017F0AF /* WaterTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F23D72D94DEC90017F0AF /* WaterTrackerView.swift */; };
 		C39F23DA2D96321D0017F0AF /* WaterTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F23D92D96321D0017F0AF /* WaterTrackerViewModel.swift */; };
 		C39F23DC2D96354F0017F0AF /* WaterTrackerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F23DB2D96354F0017F0AF /* WaterTrackerMainView.swift */; };
+		C39F23E72D9CC77C0017F0AF /* ShakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F23E62D9CC77C0017F0AF /* ShakeViewModel.swift */; };
+		C39F23E92D9CC78A0017F0AF /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F23E82D9CC78A0017F0AF /* ShakeView.swift */; };
 		C3E89C7E2D6569930042D0D9 /* TemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E89C7D2D6569920042D0D9 /* TemperatureViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		C39F23D72D94DEC90017F0AF /* WaterTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerView.swift; sourceTree = "<group>"; };
 		C39F23D92D96321D0017F0AF /* WaterTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerViewModel.swift; sourceTree = "<group>"; };
 		C39F23DB2D96354F0017F0AF /* WaterTrackerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerMainView.swift; sourceTree = "<group>"; };
+		C39F23E62D9CC77C0017F0AF /* ShakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeViewModel.swift; sourceTree = "<group>"; };
+		C39F23E82D9CC78A0017F0AF /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		C3E89C7D2D6569920042D0D9 /* TemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +178,7 @@
 		C34CD5A92D8BA23F00D1B357 /* SecondPartial */ = {
 			isa = PBXGroup;
 			children = (
+				C39F23E02D9CC6800017F0AF /* Shake */,
 				C39F23CE2D9220F00017F0AF /* WaterTracker */,
 				C34CD5B92D8CF47500D1B357 /* Animations */,
 				C34CD5AA2D8BA25400D1B357 /* DataStructures */,
@@ -266,6 +271,31 @@
 				C39F23D92D96321D0017F0AF /* WaterTrackerViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C39F23E02D9CC6800017F0AF /* Shake */ = {
+			isa = PBXGroup;
+			children = (
+				C39F23E42D9CC74B0017F0AF /* Views */,
+				C39F23E32D9CC72F0017F0AF /* ViewModel */,
+			);
+			path = Shake;
+			sourceTree = "<group>";
+		};
+		C39F23E32D9CC72F0017F0AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C39F23E62D9CC77C0017F0AF /* ShakeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C39F23E42D9CC74B0017F0AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C39F23E82D9CC78A0017F0AF /* ShakeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +440,7 @@
 				C33B565B2D7689A700921CDE /* SwiftUIView.swift in Sources */,
 				C39F23DA2D96321D0017F0AF /* WaterTrackerViewModel.swift in Sources */,
 				C34CD5B12D8BA37200D1B357 /* ItemViewModel.swift in Sources */,
+				C39F23E92D9CC78A0017F0AF /* ShakeView.swift in Sources */,
 				C34CD5B52D8BA5C100D1B357 /* DetailListExampleView.swift in Sources */,
 				C34CD5AF2D8BA2A300D1B357 /* ItemModel.swift in Sources */,
 				C34CD5B32D8BA59300D1B357 /* ListExampleView.swift in Sources */,
@@ -419,6 +450,7 @@
 				C39F23D62D92253C0017F0AF /* ProfileViewModel.swift in Sources */,
 				C34CD5BC2D8CF49E00D1B357 /* LottieAnimationView.swift in Sources */,
 				C39F23D82D94DEC90017F0AF /* WaterTrackerView.swift in Sources */,
+				C39F23E72D9CC77C0017F0AF /* ShakeViewModel.swift in Sources */,
 				C303A68C2D5ECFAF008D8DD1 /* mobile2SwiftUIApp.swift in Sources */,
 				C3957F302D641C5E00DFDCD3 /* TemperatureView.swift in Sources */,
 				C39F23D32D9221D00017F0AF /* ProfileView.swift in Sources */,
