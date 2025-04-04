@@ -8,18 +8,31 @@
 import SwiftUI
 
 struct WaterTrackerMainView: View {
+    @StateObject private var viewModel = AuthenticationViewModel()
+    @State private var navigateToWaterTracker = false
+
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                NavigationLink(destination: WaterTrackerView()) {
-                    Text("Water Tracker")
+                // Botón que lanza Face ID y luego navega si es exitoso
+                Button(action: {
+                    viewModel.authenticateWithFaceID()
+                }) {
+                    Text("Water Tracker (Protected)")
                         .frame(maxWidth: .infinity, alignment: .center)
                         .padding()
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
-                
+
+                // Navegación oculta controlada por el estado
+                NavigationLink(
+                    destination: WaterTrackerView(),
+                    isActive: $navigateToWaterTracker,
+                    label: { EmptyView() }
+                )
+
                 NavigationLink(destination: ProfileView()) {
                     Text("Profile Screen")
                         .frame(maxWidth: .infinity, alignment: .center)
@@ -30,7 +43,14 @@ struct WaterTrackerMainView: View {
                 }
             }
             .navigationTitle("Pantalla de Inicio")
+            .onAppear {
+                viewModel.isAuthenticated = false
+            }
+            .onChange(of: viewModel.isAuthenticated) { isAuthenticated in
+                if isAuthenticated {
+                    navigateToWaterTracker = true
+                }
+            }
         }
     }
 }
-
