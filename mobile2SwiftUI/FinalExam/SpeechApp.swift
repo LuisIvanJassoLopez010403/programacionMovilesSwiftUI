@@ -1,12 +1,12 @@
-import SwiftUI
+import Foundation
 import Speech
 import AVFoundation
 
 class SpeechRecognizerManager: ObservableObject {
-    @Published var transcribedText = "Di algo..."
+    @Published var transcribedText = "Say something"
     @Published var isRecording = false
 
-    private let speechRecognizer = SFSpeechRecognizer()
+    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
     private let audioEngine = AVAudioEngine()
     private var request: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
@@ -24,32 +24,44 @@ class SpeechRecognizerManager: ObservableObject {
     }
 
     func startRecording() {
-        guard let recognizer = SFSpeechRecognizer(), recognizer.isAvailable else {
+        guard let recognizer = speechRecognizer, recognizer.isAvailable else {
             transcribedText = "El reconocimiento no está disponible."
             return
         }
 
         request = SFSpeechAudioBufferRecognitionRequest()
+        guard let request = request else {
+            transcribedText = "No se pudo crear la solicitud de audio."
+            return
+        }
+
         let node = audioEngine.inputNode
         let recordingFormat = node.outputFormat(forBus: 0)
         node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { buffer, _ in
-            self.request?.append(buffer)
+            request.append(buffer)
         }
 
         audioEngine.prepare()
-        try? audioEngine.start()
+        do {
+            try audioEngine.start()
+        } catch {
+            transcribedText = "Error al iniciar el audio: \(error.localizedDescription)"
+            return
+        }
 
         isRecording = true
-        transcribedText = "Escuchando..."
+        transcribedText = "Listening..."
 
-        recognitionTask = recognizer.recognitionTask(with: request!) { result, error in
+        recognitionTask = recognizer.recognitionTask(with: request) { result, error in
             if let result = result {
                 DispatchQueue.main.async {
                     self.transcribedText = result.bestTranscription.formattedString
                 }
             } else if let error = error {
-                DispatchQueue.main.async {
-                    self.transcribedText = "Error: \(error.localizedDescription)"
+                if (error as NSError).code != 216 {
+                    DispatchQueue.main.async {
+                        self.transcribedText = "Error: \(error.localizedDescription)"
+                    }
                 }
             }
         }
@@ -59,34 +71,9 @@ class SpeechRecognizerManager: ObservableObject {
         audioEngine.stop()
         audioEngine.inputNode.removeTap(onBus: 0)
         recognitionTask?.cancel()
+        recognitionTask = nil
+        request = nil
         isRecording = false
-        transcribedText = "Grabación detenida."
-    }
-}
-
-struct SpeechApp: View {
-    @StateObject private var speechManager = SpeechRecognizerManager()
-
-    var body: some View {
-        VStack(spacing: 20) {
-            Text(speechManager.transcribedText)
-                .padding()
-                .background(Color.gray.opacity(0.1))
-                .cornerRadius(10)
-                .padding()
-
-            Button(speechManager.isRecording ? "Detener" : "Empezar a escuchar") {
-                if speechManager.isRecording {
-                    speechManager.stopRecording()
-                } else {
-                    speechManager.requestAuthorizationAndStart()
-                }
-            }
-            .padding()
-            .background(speechManager.isRecording ? Color.red : Color.green)
-            .foregroundColor(.white)
-            .cornerRadius(10)
-        }
     }
 }
 
