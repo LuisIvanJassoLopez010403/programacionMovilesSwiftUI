@@ -22,6 +22,9 @@
 		C34CD5B82D8CF41C00D1B357 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C34CD5B72D8CF41C00D1B357 /* Lottie */; };
 		C34CD5BC2D8CF49E00D1B357 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CD5BB2D8CF49E00D1B357 /* LottieAnimationView.swift */; };
 		C34CD5BF2D8CF8A800D1B357 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = C34CD5BE2D8CF8A800D1B357 /* animation.json */; };
+		C35484C12DC05EC700C2F2D4 /* ClubsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35484C02DC05EC700C2F2D4 /* ClubsModel.swift */; };
+		C35484C32DC05FBE00C2F2D4 /* ClubsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35484C22DC05FBE00C2F2D4 /* ClubsViewModel.swift */; };
+		C35484C52DC063EE00C2F2D4 /* ClubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35484C42DC063EE00C2F2D4 /* ClubsView.swift */; };
 		C3957F282D6417FA00DFDCD3 /* SumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3957F272D6417F900DFDCD3 /* SumView.swift */; };
 		C3957F2A2D6418D200DFDCD3 /* SumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3957F292D6418D200DFDCD3 /* SumViewModel.swift */; };
 		C3957F2E2D64196300DFDCD3 /* UIAlertControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3957F2D2D64196300DFDCD3 /* UIAlertControllerWrapper.swift */; };
@@ -34,6 +37,8 @@
 		C39F23E72D9CC77C0017F0AF /* ShakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F23E62D9CC77C0017F0AF /* ShakeViewModel.swift */; };
 		C39F23E92D9CC78A0017F0AF /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F23E82D9CC78A0017F0AF /* ShakeView.swift */; };
 		C39F23ED2D9F696D0017F0AF /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F23EC2D9F696D0017F0AF /* AuthenticationViewModel.swift */; };
+		C3AE3CF22DEE678C00260BEC /* SpeechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE3CF12DEE678C00260BEC /* SpeechApp.swift */; };
+		C3B646DD2DCC3C35004C0DB0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B646DC2DCC3C35004C0DB0 /* WebView.swift */; };
 		C3E89C7E2D6569930042D0D9 /* TemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E89C7D2D6569920042D0D9 /* TemperatureViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +77,9 @@
 		C34CD5B42D8BA5C100D1B357 /* DetailListExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListExampleView.swift; sourceTree = "<group>"; };
 		C34CD5BB2D8CF49E00D1B357 /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
 		C34CD5BE2D8CF8A800D1B357 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation.json; sourceTree = "<group>"; };
+		C35484C02DC05EC700C2F2D4 /* ClubsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsModel.swift; sourceTree = "<group>"; };
+		C35484C22DC05FBE00C2F2D4 /* ClubsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsViewModel.swift; sourceTree = "<group>"; };
+		C35484C42DC063EE00C2F2D4 /* ClubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsView.swift; sourceTree = "<group>"; };
 		C3957F272D6417F900DFDCD3 /* SumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumView.swift; sourceTree = "<group>"; };
 		C3957F292D6418D200DFDCD3 /* SumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumViewModel.swift; sourceTree = "<group>"; };
 		C3957F2D2D64196300DFDCD3 /* UIAlertControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerWrapper.swift; sourceTree = "<group>"; };
@@ -84,6 +92,8 @@
 		C39F23E62D9CC77C0017F0AF /* ShakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeViewModel.swift; sourceTree = "<group>"; };
 		C39F23E82D9CC78A0017F0AF /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		C39F23EC2D9F696D0017F0AF /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		C3AE3CF12DEE678C00260BEC /* SpeechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechApp.swift; sourceTree = "<group>"; };
+		C3B646DC2DCC3C35004C0DB0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		C3E89C7D2D6569920042D0D9 /* TemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +147,8 @@
 		C303A68A2D5ECFAF008D8DD1 /* mobile2SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C3AE3CF02DEE671000260BEC /* FinalExam */,
+				C35484BE2DC05EA700C2F2D4 /* ThirdPartial */,
 				C34CD5A92D8BA23F00D1B357 /* SecondPartial */,
 				C303A68B2D5ECFAF008D8DD1 /* mobile2SwiftUIApp.swift */,
 				C303A68D2D5ECFAF008D8DD1 /* ContentView.swift */,
@@ -247,6 +259,25 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C35484BE2DC05EA700C2F2D4 /* ThirdPartial */ = {
+			isa = PBXGroup;
+			children = (
+				C3B646DB2DCC3C1C004C0DB0 /* Web */,
+				C35484BF2DC05EB000C2F2D4 /* Clubs */,
+			);
+			path = ThirdPartial;
+			sourceTree = "<group>";
+		};
+		C35484BF2DC05EB000C2F2D4 /* Clubs */ = {
+			isa = PBXGroup;
+			children = (
+				C35484C02DC05EC700C2F2D4 /* ClubsModel.swift */,
+				C35484C22DC05FBE00C2F2D4 /* ClubsViewModel.swift */,
+				C35484C42DC063EE00C2F2D4 /* ClubsView.swift */,
+			);
+			path = Clubs;
+			sourceTree = "<group>";
+		};
 		C39F23CE2D9220F00017F0AF /* WaterTracker */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +330,22 @@
 				C39F23E82D9CC78A0017F0AF /* ShakeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C3AE3CF02DEE671000260BEC /* FinalExam */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE3CF12DEE678C00260BEC /* SpeechApp.swift */,
+			);
+			path = FinalExam;
+			sourceTree = "<group>";
+		};
+		C3B646DB2DCC3C1C004C0DB0 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				C3B646DC2DCC3C35004C0DB0 /* WebView.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,14 +490,18 @@
 				C33B565B2D7689A700921CDE /* SwiftUIView.swift in Sources */,
 				C39F23DA2D96321D0017F0AF /* WaterTrackerViewModel.swift in Sources */,
 				C34CD5B12D8BA37200D1B357 /* ItemViewModel.swift in Sources */,
+				C35484C32DC05FBE00C2F2D4 /* ClubsViewModel.swift in Sources */,
 				C39F23E92D9CC78A0017F0AF /* ShakeView.swift in Sources */,
 				C34CD5B52D8BA5C100D1B357 /* DetailListExampleView.swift in Sources */,
 				C34CD5AF2D8BA2A300D1B357 /* ItemModel.swift in Sources */,
+				C3AE3CF22DEE678C00260BEC /* SpeechApp.swift in Sources */,
 				C34CD5B32D8BA59300D1B357 /* ListExampleView.swift in Sources */,
 				C39F23ED2D9F696D0017F0AF /* AuthenticationViewModel.swift in Sources */,
+				C3B646DD2DCC3C35004C0DB0 /* WebView.swift in Sources */,
 				C3957F282D6417FA00DFDCD3 /* SumView.swift in Sources */,
 				C3957F2A2D6418D200DFDCD3 /* SumViewModel.swift in Sources */,
 				C39F23DC2D96354F0017F0AF /* WaterTrackerMainView.swift in Sources */,
+				C35484C12DC05EC700C2F2D4 /* ClubsModel.swift in Sources */,
 				C39F23D62D92253C0017F0AF /* ProfileViewModel.swift in Sources */,
 				C34CD5BC2D8CF49E00D1B357 /* LottieAnimationView.swift in Sources */,
 				C39F23D82D94DEC90017F0AF /* WaterTrackerView.swift in Sources */,
@@ -458,6 +509,7 @@
 				C303A68C2D5ECFAF008D8DD1 /* mobile2SwiftUIApp.swift in Sources */,
 				C3957F302D641C5E00DFDCD3 /* TemperatureView.swift in Sources */,
 				C39F23D32D9221D00017F0AF /* ProfileView.swift in Sources */,
+				C35484C52DC063EE00C2F2D4 /* ClubsView.swift in Sources */,
 				C3E89C7E2D6569930042D0D9 /* TemperatureViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,6 +677,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Vamos a jugar";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -654,6 +708,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Vamos a jugar";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

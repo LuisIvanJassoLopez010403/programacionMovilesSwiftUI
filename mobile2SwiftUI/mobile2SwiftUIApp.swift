@@ -11,7 +11,7 @@ import SwiftUI
 struct mobile2SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            WaterTrackerMainView()
+            SpeechApp()
         }
     }
 }
